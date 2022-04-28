@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>{{ Ruficoin the best cryptocurrencyfa-border }}</title>
+  </head>
+  <body>
+    <div><a href="/index">Home</a></div>
+    <center><h1>{{ Your Token or coin in Ruficoin }}</h1></center>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <ul>
+    {% for message in messages %}
+        <li>{{ message }} </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </body>
+</html>
